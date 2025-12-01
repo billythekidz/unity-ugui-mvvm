@@ -25,11 +25,11 @@ public class UIProgressBar : MonoBehaviour {
 	}
 
 	void Awake () {
-		Transform fg = transform.FindChild ("FG");
+		Transform fg = transform.Find ("FG");
 		if(fg != null)
 			foreground = fg.GetComponent<RectTransform>();
 		foreGroundImg = foreground.GetComponent<Image> ();
-		Transform fgThumb = transform.FindChild ("FGThumb");
+		Transform fgThumb = transform.Find ("FGThumb");
 		if(fgThumb != null)
 			foreground = fg.GetComponent<RectTransform>();
 		if(fgThumb != null)
